@@ -2,67 +2,141 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080b14"><meta name="description" content="Turn a business idea into a customer validation plan, MVP outline, and seven-day launch checklist with FounderAI.">
-<title>Startup Co-Pilot — FounderAI</title>
+<meta name="theme-color" content="#080b14">
+<meta name="description" content="Create a detailed startup strategy, customer validation plan, MVP scope and seven-day roadmap — then export a polished PDF for free.">
+<title>Startup Blueprint Studio — FounderAI</title>
 <style>
-:root{color-scheme:dark;--bg:#080b14;--panel:#111725;--line:#29334a;--text:#f4f6ff;--muted:#a3aec3;--violet:#b2a6ff;--cyan:#70e7dd}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0,#29234d 0,transparent 34%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}.wrap{width:min(1080px,calc(100% - 32px));margin:auto}a{color:inherit;text-decoration:none}.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid #ffffff14}.brand{font-weight:800;font-size:19px;letter-spacing:-.04em}.mark{display:inline-grid;place-items:center;width:34px;height:34px;margin-right:8px;border-radius:11px;background:linear-gradient(135deg,var(--violet),var(--cyan));color:#0b1020}.back{color:var(--muted);font-size:14px}.hero{padding:46px 0 26px}.eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}h1{font-size:clamp(36px,6vw,56px);line-height:1.06;letter-spacing:-.06em;margin:12px 0}.hero p{color:var(--muted);max-width:680px}.layout{display:grid;grid-template-columns:350px 1fr;gap:18px;align-items:start;padding-bottom:55px}.panel,.result{background:linear-gradient(145deg,#141b2a,#0f1420);border:1px solid var(--line);border-radius:18px;padding:22px}.panel{position:sticky;top:14px}.panel h2{font-size:18px;margin:0 0 6px}.hint{color:var(--muted);font-size:13px;margin:0 0 18px}label{display:block;font-size:13px;font-weight:700;margin:16px 0 7px}textarea,input,select{width:100%;background:#090e19;border:1px solid #303b53;color:var(--text);border-radius:10px;padding:12px;font:inherit;outline:none}textarea{min-height:108px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:var(--violet)}.btn{border:0;border-radius:11px;padding:12px 16px;background:linear-gradient(110deg,var(--violet),var(--cyan));color:#0b1020;font-weight:800;cursor:pointer}.btn:disabled{opacity:.5;cursor:not-allowed}.full{width:100%;margin-top:18px}.small{font-size:12px;color:#8794ad;margin-top:12px}.results-head{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:15px}.results-head h2{margin:0;font-size:19px}.pill{font-size:11px;border:1px solid #70e7dd55;color:var(--cyan);padding:4px 8px;border-radius:99px}.empty{min-height:350px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:30px}.empty .symbol{font-size:36px;color:var(--violet)}.empty h3{color:var(--text);margin:8px 0}.output{display:none}.section{padding:16px 0;border-bottom:1px solid #ffffff12}.section:last-child{border:0}.section h3{font-size:15px;margin:0 0 9px;display:flex;gap:8px;align-items:center}.n{color:var(--cyan);font-size:11px}.section p,.section li{font-size:14px;color:#c1cbe0}.section ul,.section ol{padding-left:21px;margin:8px 0}.chip{display:inline-block;border:1px solid #ffffff1a;background:#ffffff08;border-radius:8px;padding:5px 8px;margin:4px 4px 0 0;font-size:12px;color:#d4dcf0}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.secondary{background:#ffffff08;color:var(--text);border:1px solid var(--line)}.notice{font-size:12px;color:#8995ab;margin-top:15px}.footer{border-top:1px solid #ffffff12;padding:22px 0 35px;color:#8995ab;font-size:12px}@media(max-width:780px){.layout{grid-template-columns:1fr}.panel{position:static}.empty{min-height:220px}}
+:root{color-scheme:dark;--bg:#080b14;--panel:#111725;--line:#29334a;--text:#f4f6ff;--muted:#a3aec3;--violet:#b2a6ff;--cyan:#70e7dd;--paper:#fff;--ink:#172033}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0,#29234d 0,transparent 34%),var(--bg);color:var(--text);font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}a{color:inherit;text-decoration:none}.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid #ffffff14}.brand{font-weight:850;font-size:19px;letter-spacing:-.04em}.mark{display:inline-grid;place-items:center;width:34px;height:34px;margin-right:8px;border-radius:11px;background:linear-gradient(135deg,var(--violet),var(--cyan));color:#0b1020}.back{color:var(--muted);font-size:14px}.hero{padding:40px 0 24px}.eyebrow{color:var(--cyan);font-size:11px;font-weight:850;letter-spacing:.16em;text-transform:uppercase}h1{font-size:clamp(35px,5vw,54px);line-height:1.04;letter-spacing:-.06em;margin:10px 0}.hero p{color:var(--muted);max-width:760px}.layout{display:grid;grid-template-columns:360px minmax(0,1fr);gap:18px;align-items:start;padding-bottom:50px}.panel,.result{background:linear-gradient(145deg,#141b2a,#0f1420);border:1px solid var(--line);border-radius:18px;padding:21px}.panel{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow:auto}.panel h2{font-size:18px;margin:0 0 4px}.hint{color:var(--muted);font-size:12px;margin:0 0 16px}label{display:block;font-size:12px;font-weight:750;margin:13px 0 6px}input,textarea,select{width:100%;background:#090e19;border:1px solid #303b53;color:var(--text);border-radius:9px;padding:10px 11px;font:inherit;font-size:13px;outline:none}textarea{min-height:78px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:var(--violet)}.btn{border:0;border-radius:10px;padding:11px 14px;background:linear-gradient(110deg,var(--violet),var(--cyan));color:#0b1020;font-weight:850;cursor:pointer;font-size:13px}.btn:focus-visible{outline:2px solid white;outline-offset:3px}.btn:disabled{opacity:.5}.full{width:100%;margin-top:17px}.small{font-size:11px;color:#8995ab;margin-top:10px}.result-head{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:14px}.result-head h2{margin:0;font-size:18px}.pill{font-size:10px;border:1px solid #70e7dd55;color:var(--cyan);padding:4px 8px;border-radius:99px;white-space:nowrap}.empty{min-height:360px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:26px}.empty .symbol{font-size:38px;color:var(--violet)}.empty h3{color:var(--text);margin:8px 0}.output{display:none}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:18px}.stat{border:1px solid var(--line);background:#ffffff05;border-radius:12px;padding:12px}.stat b{display:block;font-size:18px;color:var(--cyan);letter-spacing:-.03em}.stat span{font-size:10px;color:var(--muted)}.section{padding:17px 0;border-bottom:1px solid #ffffff12;break-inside:avoid}.section:last-child{border:0}.section h3{font-size:15px;margin:0 0 9px;display:flex;gap:8px;align-items:center}.n{color:var(--cyan);font-size:10px;letter-spacing:.1em}.section p,.section li{font-size:13px;color:#c1cbe0}.section ul,.section ol{padding-left:20px;margin:8px 0}.section li{margin:5px 0}.callout{border:1px solid #70e7dd30;background:#70e7dd0a;padding:12px;border-radius:10px;margin-top:10px}.callout strong{color:var(--cyan)}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.secondary{background:#ffffff08;color:var(--text);border:1px solid var(--line)}.notice{font-size:11px;color:#8995ab;margin-top:13px}.footer{border-top:1px solid #ffffff12;padding:22px 0 35px;color:#8995ab;font-size:12px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}.scorebar{height:7px;background:#29334a;border-radius:99px;overflow:hidden;margin:9px 0}.scorebar span{display:block;height:100%;background:linear-gradient(90deg,var(--violet),var(--cyan));width:0}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.panel{position:static;max-height:none}.empty{min-height:220px}}@media print{@page{size:A4;margin:15mm} :root{color-scheme:light}body{background:white!important;color:#172033!important;font-size:10pt}.wrap{width:100%;margin:0}.nav,.hero,.panel,.result-head,.actions,.footer,.notice,.no-print{display:none!important}.layout{display:block;padding:0}.result{display:block;background:white!important;border:0;padding:0;color:#172033}.output{display:block!important}.section{border-bottom:1px solid #dce3ef;break-inside:avoid;padding:12px 0}.section h3{font-size:13pt;color:#172033}.section p,.section li{color:#374151!important;font-size:9pt}.n{color:#6654d9}.stats{gap:8px}.stat{background:#f3f5fb;border-color:#dce3ef;break-inside:avoid}.stat b{color:#5140bf}.stat span{color:#5b6475}.callout{background:#f1fbfa;border-color:#b8e9e3}.callout strong{color:#176d67}.section ul,.section ol{padding-left:18px}.print-cover{display:block!important;background:#111c31!important;color:white!important;padding:26mm 15mm;margin:0 0 12mm;min-height:210mm;break-after:page}.print-cover h1{font-size:36pt;line-height:1.05;color:white}.print-cover p{color:#d6deee!important;font-size:12pt}.print-cover .cover-kicker{color:#70cfc8!important;font-weight:bold;letter-spacing:2px;font-size:9pt}.print-cover .cover-rule{height:3px;background:#9d8cff;margin:10mm 0;width:35mm}.print-cover .cover-meta{margin-top:35mm;border-top:1px solid #ffffff44;padding-top:6mm;font-size:9pt;color:#d6deee}.print-page-title{display:block!important;font-size:20pt;color:#172033;border-bottom:2px solid #7657ff;padding-bottom:4mm;margin-bottom:4mm}.print-section{break-before:auto}.print-blank{display:none!important}a{color:inherit;text-decoration:none}}
+.print-cover,.print-page-title{display:none}
 </style>
 </head>
 <body>
-<header class="wrap"><nav class="nav"><a class="brand" href="./"><span class="mark">F</span>FounderAI</a><a class="back" href="./">← Back to home</a></nav></header>
+<header class="wrap no-print"><nav class="nav"><a class="brand" href="./"><span class="mark">F</span>FounderAI</a><a class="back" href="./">← Back to home</a></nav></header>
 <main class="wrap">
-<section class="hero"><div class="eyebrow">FounderAI · Product preview</div><h1>Your idea. A clearer next move.</h1><p>Build a practical first-pass startup brief: who to serve, what to test, a small MVP, and the first seven days of action. No account required.</p></section>
+<section class="hero no-print"><div class="eyebrow">FounderAI · Blueprint Studio</div><h1>Turn an idea into an execution plan.</h1><p>Build a structured startup blueprint with customer research, market assumptions, MVP scope, a seven-day sprint, risk checks and measurable validation goals. Export it as a print-ready PDF — no AI API, account or paid service required.</p></section>
 <div class="layout">
-<form class="panel" id="planner"><h2>Tell us what you're building</h2><p class="hint">A little context makes the plan more useful.</p>
-<label for="idea">Your business idea *</label><textarea id="idea" maxlength="1600" required placeholder="What do you want to make, and what problem does it solve?"></textarea>
-<label for="audience">Who might use it?</label><input id="audience" maxlength="180" placeholder="e.g. independent game developers">
-<label for="stage">Where are you right now?</label><select id="stage"><option value="idea">Just an idea</option><option value="research">Researching the problem</option><option value="prototype">Building a prototype</option><option value="launched">Already launched</option></select>
-<label for="budget">Starting budget</label><select id="budget"><option value="zero">$0 — use free tools</option><option value="small">Under $100</option><option value="flexible">Some budget available</option></select>
-<button class="btn full" type="submit">Generate my startup brief →</button>
-<p class="small">Your input is processed in this browser only. This preview doesn't call an AI service or upload your idea.</p>
+<form class="panel no-print" id="planner">
+<h2>Build your blueprint</h2><p class="hint">Specific answers create a more useful plan. You can leave non-essential fields blank.</p>
+<label for="name">Startup / project name *</label><input id="name" maxlength="90" required placeholder="e.g. FounderAI">
+<label for="idea">What are you building? *</label><textarea id="idea" maxlength="1800" required placeholder="Describe the product or service and the problem it solves."></textarea>
+<label for="audience">Who is the first target customer? *</label><input id="audience" maxlength="220" required placeholder="A narrow, specific group of people">
+<label for="problem">What painful problem do they have? *</label><textarea id="problem" maxlength="900" required placeholder="Describe the problem, when it occurs, and why existing options fall short."></textarea>
+<label for="solution">What is your proposed solution?</label><textarea id="solution" maxlength="900" placeholder="What would your product help the customer do?"></textarea>
+<div class="two-col"><div><label for="stage">Current stage</label><select id="stage"><option value="idea">Idea only</option><option value="research">Researching customers</option><option value="prototype">Prototype in progress</option><option value="launched">Already launched</option></select></div><div><label for="budget">Available budget</label><select id="budget"><option value="zero">$0 — strictly free</option><option value="small">Under $100</option><option value="flexible">Some budget available</option></select></div></div>
+<label for="evidence">What evidence do you have so far?</label><textarea id="evidence" maxlength="900" placeholder="Interviews, sign-ups, tests, sales — or say none yet."></textarea>
+<label for="alternatives">How do people solve it today?</label><textarea id="alternatives" maxlength="700" placeholder="Competitors, workarounds, spreadsheets, doing nothing…"></textarea>
+<label for="goal">What would a successful first month look like?</label><input id="goal" maxlength="300" placeholder="e.g. 10 user tests and 3 repeat users">
+<label for="constraints">Important constraints</label><input id="constraints" maxlength="300" placeholder="Time, skills, device, location, accessibility…">
+<button class="btn full" type="submit">Generate detailed blueprint ↗</button>
+<p class="small">Privacy-first: the planner runs locally in your browser. It does not upload your idea or call an AI API. PDF export uses your browser's Print → Save as PDF feature.</p>
 </form>
-<section class="result" aria-live="polite"><div class="results-head"><h2>Your startup brief</h2><span class="pill">FIRST DRAFT</span></div>
-<div class="empty" id="empty"><div><div class="symbol">✳</div><h3>Your plan starts here</h3><p>Fill in your idea and generate a practical set of next steps. Treat it as a starting hypothesis, not proof that a business will succeed.</p></div></div>
+<section class="result" aria-live="polite">
+<div class="result-head no-print"><h2>Your startup blueprint</h2><span class="pill">RULE-BASED ENGINE</span></div>
+<div class="empty no-print" id="empty"><div><div class="symbol">✳</div><h3>Your next move, made clearer</h3><p>Complete the key fields to generate a detailed plan with clear assumptions, tests, priorities and an export-ready report.</p></div></div>
 <div class="output" id="output"></div>
 </section>
 </div>
 </main>
-<footer class="wrap footer">FounderAI · Build with evidence, not assumptions. This planning tool is an early preview and does not guarantee market demand or business outcomes.</footer>
+<footer class="wrap footer no-print">FounderAI · Build with evidence, not assumptions. Plans are structured starting points, not proof of demand or a guarantee of business outcomes.</footer>
 <script>
 const $=id=>document.getElementById(id);
-const escapeHTML=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const bullets=items=>'<ul>'+items.map(x=>'<li>'+x+'</li>').join('')+'</ul>';
+const esc=value=>String(value||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeText=value=>esc(value).replace(/\n/g,' ').trim();
+const list=items=>'<ul>'+items.map(x=>'<li>'+x+'</li>').join('')+'</ul>';
+const section=(n,title,body)=>'<section class="section"><h3><span class="n">'+n+' /</span>'+title+'</h3>'+body+'</section>';
+function makePlan(d){
+ const isZero=d.budget==='zero',hasEvidence=d.evidence.trim().length>0;
+ const scoreParts=[
+  {label:'Problem clarity',value:d.problem.trim().length>=90?100:d.problem.trim().length>=35?70:35},
+  {label:'Customer focus',value:d.audience.trim().split(/\s+/).length>=3?100:60},
+  {label:'Solution definition',value:d.solution.trim().length>=70?100:d.solution.trim().length?60:20},
+  {label:'Evidence collected',value:hasEvidence?85:10},
+  {label:'Alternatives understood',value:d.alternatives.trim()?80:15}
+ ];
+ const completeness=Math.round(scoreParts.reduce((s,x)=>s+x.value,0)/scoreParts.length);
+ const questions=[
+  'Tell me about the last time you experienced this problem. What happened?',
+  'How do you handle it now, step by step?',
+  'What does the current workaround cost in time, money, effort or missed opportunity?',
+  'What have you already tried? Why did you stop or continue using it?',
+  'Who else is involved in choosing or paying for a solution?',
+  'What would make you switch from your current approach?',
+  'Can I follow up with you to test a rough version?'
+ ];
+ const mvp=[
+  'Choose one customer segment and one painful use case. Avoid trying to serve everyone at once.',
+  'Describe the core promise in one sentence: “Help [specific customer] achieve [outcome] without [main friction].”',
+  'Prototype only the single workflow needed to test that promise. Use a sketch, clickable mock-up, spreadsheet, or manual service.',
+  'Put the prototype in front of real target users and observe what they do without coaching them through it.',
+  'Record confusion, workarounds, repeat usage and concrete commitments. Build additional features only when evidence supports them.'
+ ];
+ if(isZero)mvp.push('Keep the first experiment at $0: use free tools, manual delivery and direct conversations. Check free-tier limits and never enable paid billing accidentally.');
+ const days=[
+  ['Day 1','Sharpen the hypothesis','Write the target customer, trigger event, problem and promised outcome in one page. List the three riskiest assumptions.'],
+  ['Day 2','Recruit potential users','Make a list of 10 suitable people or communities and invite a few to a short research conversation.'],
+  ['Day 3','Run discovery','Aim for five honest conversations. Ask about past behaviour and existing workarounds, not whether they like your idea.'],
+  ['Day 4','Map alternatives','Compare direct competitors, indirect substitutes, manual workarounds and doing nothing. Identify one clear gap to test.'],
+  ['Day 5','Prototype the core value','Build the cheapest demonstration of one important outcome. Do not build secondary features.'],
+  ['Day 6','Test and observe','Let three people try the prototype. Note what they do, where they get stuck and whether they ask to use it again.'],
+  ['Day 7','Make an evidence-based decision','Summarize findings. Continue, change the audience/problem, or pause. Define the next test before adding scope.']
+ ];
+ if(d.stage==='launched'){days[1]=['Day 2','Talk to active and inactive users','Ask what made them try it, what keeps them using it, and what caused drop-off.'];days[5]=['Day 6','Measure a real behaviour','Test activation, completion or repeat use—not just compliments or page views.'];}
+ if(d.stage==='prototype'){days[4]=['Day 5','Reduce prototype friction','Choose the one workflow most important to the promise and remove distractions from it.'];}
+ const risks=[
+  ['Demand risk','People may not feel the problem is urgent.','Interview people who recently experienced it; look for current effort, spending or workarounds.'],
+  ['Audience risk','The target group may be too broad or hard to reach.','Choose one narrow segment and test outreach before expanding.'],
+  ['Solution risk','The proposed product may not beat existing alternatives.','Ask users to compare the workflow with what they do today.'],
+  ['Execution risk','The build may become too large for the available time or skills.','Time-box the prototype and test manually before automating.'],
+  ['Cost risk',isZero?'Free tiers can have limits or change.':'Spending may happen before the idea is validated.','Set a hard limit and define the evidence required before any expense.']
+ ];
+ const milestones=[
+  ['Discovery','5 relevant conversations','People describe the problem without being led.'],
+  ['Problem signal','Repeated pain or workaround','Several people independently describe a similar recent issue.'],
+  ['Prototype','3 observed tests','Users can attempt the core workflow and feedback is recorded.'],
+  ['Commitment','A concrete next step','A user returns, refers someone, joins a trial, or makes another meaningful commitment.']
+ ];
+ const customer=esc(d.audience),problem=esc(d.problem),solution=esc(d.solution||'Not defined yet — keep the first test focused on the problem.'),idea=esc(d.idea);
+ const budgetText=isZero?'Strict $0. Prefer direct research, manual prototypes and free tools. Do not add paid services or billing to the first experiment.':d.budget==='small'?'Treat spending as an exception. Validate the problem first and set a written cap for any experiment.':'Define a spending cap and a learning goal before paying for any tool or campaign.';
+ const evidenceText=hasEvidence?esc(d.evidence):'No evidence entered yet. Treat demand as unvalidated and make customer discovery the first milestone.';
+ const altText=d.alternatives.trim()?esc(d.alternatives):'Not mapped yet. Research direct competitors, indirect substitutes, current manual workarounds and doing nothing.';
+ const goalText=esc(d.goal||'Complete discovery conversations, test one prototype, and make the next decision using evidence.');
+ const constraintText=esc(d.constraints||'No additional constraints supplied. Review available time, skills, reach and any platform requirements before building.');
+ const scoreHTML=scoreParts.map(x=>'<div class="stat"><b>'+x.value+'%</b><span>'+x.label+'</span><div class="scorebar"><span style="width:'+x.value+'%"></span></div></div>').join('');
+ const daysHTML='<ol>'+days.map(x=>'<li><strong>'+x[0]+' — '+x[1]+'.</strong> '+x[2]+'</li>').join('')+'</ol>';
+ const riskHTML='<ul>'+risks.map(x=>'<li><strong>'+x[0]+':</strong> '+x[1]+' <em>Test:</em> '+x[2]+'</li>').join('')+'</ul>';
+ const milestoneRows='<div>'+milestones.map(x=>'<div class="callout"><strong>'+x[0]+'</strong><p><b>Target:</b> '+x[1]+'</p><p>'+x[2]+'</p></div>').join('')+'</div>';
+ return '<div class="print-cover"><div class="cover-kicker">FOUNDERAI / STARTUP FIELD GUIDE</div><div class="cover-rule"></div><h1>'+esc(d.name)+'</h1><p>Startup validation & execution blueprint</p><p>'+idea+'</p><div class="cover-meta">Prepared with FounderAI’s local rule-based planning engine<br>Designed to turn assumptions into small, testable actions<br>Budget approach: '+(isZero?'Strictly $0':esc(d.budget))+'</div></div>'+
+ '<div class="print-page-title">Executive snapshot</div>'+
+ '<div class="stats"><div class="stat"><b>'+completeness+'/100</b><span>Input completeness · not success probability</span><div class="scorebar"><span style="width:'+completeness+'%"></span></div></div><div class="stat"><b>7 days</b><span>First validation sprint</span></div><div class="stat"><b>'+(isZero?'$0':'Budget-aware')+'</b><span>Initial experiment approach</span></div></div>'+
+ section('01','Executive summary','<p><strong>Concept:</strong> '+idea+'</p><p><strong>Target customer:</strong> '+customer+'</p><p><strong>Problem:</strong> '+problem+'</p><p><strong>Proposed solution:</strong> '+solution+'</p><p><strong>First-month goal:</strong> '+goalText+'</p><div class="callout"><strong>Core strategy</strong><p>Validate that the problem is real and important before investing in a full product. The immediate goal is learning, not scale.</p></div>')+
+ section('02','Problem & customer hypothesis','<p><strong>Hypothesis:</strong> '+customer+' experience the following problem: '+problem+'</p><p>This is a hypothesis, not a confirmed market fact. Check whether people describe the problem independently, how often it occurs, and what it costs them.</p><p><strong>Evidence so far:</strong> '+evidenceText+'</p><p><strong>Current alternatives:</strong> '+altText+'</p><p><strong>Constraints:</strong> '+constraintText+'</p>')+
+ section('03','Customer discovery playbook','<p>Interview people who fit the target customer description. Ask about a recent event and their existing behaviour. Avoid leading questions such as “Would you use my app?”</p>'+list(questions.map(esc))+'<div class="callout"><strong>Interview rule</strong><p>Listen for repeated pain, existing workarounds, urgency and willingness to take a next step. Compliments alone are weak evidence.</p></div>')+
+ section('04','Market & alternatives research','<p>Before claiming a market gap, examine four categories:</p>'+list(['<strong>Direct alternatives:</strong> products aimed at the same customer and problem.','<strong>Indirect alternatives:</strong> tools that solve only part of the problem.','<strong>Manual workarounds:</strong> spreadsheets, messages, contractors or custom processes.','<strong>Doing nothing:</strong> why customers may tolerate the problem instead of changing.'])+'<p><strong>Research task:</strong> collect 3–5 alternatives, note their target users, promise, pricing if publicly available, strengths and common complaints. Do not assume a competitor’s existence proves demand for your version.</p>')+
+ section('05','MVP scope & build rules','<p><strong>MVP principle:</strong> the smallest experiment that can test the most important assumption.</p>'+list(mvp.map(esc))+'<p><strong>Not yet:</strong> elaborate onboarding, complex account systems, large feature sets, paid advertising, custom infrastructure or expensive integrations before evidence supports them.</p><div class="callout"><strong>Budget rule</strong><p>'+esc(budgetText)+'</p></div>')+
+ section('06','Seven-day execution sprint',daysHTML)+
+ section('07','Risks & low-cost tests',riskHTML)+
+ section('08','Validation scorecard',milestoneRows+'<p>Record actual results after each test. These targets are practical starting points, not universal benchmarks or guarantees.</p>')+
+ section('09','Decision gates','<p><strong>Continue:</strong> people repeatedly describe the problem, show existing effort to solve it, and take a concrete next step.</p><p><strong>Revise:</strong> a real problem appears, but the audience, positioning or solution needs to change.</p><p><strong>Pause:</strong> conversations reveal little urgency, no existing effort and no follow-through. A pause is useful information, not failure.</p><p><strong>Next decision to make:</strong> '+goalText+'</p>')+
+ section('10','Founder action checklist','<ul><li>Write the one-sentence customer/problem hypothesis.</li><li>List three assumptions that could make the idea fail.</li><li>Contact potential users and schedule conversations.</li><li>Document current alternatives and workarounds.</li><li>Prototype only the core value proposition.</li><li>Observe real users and record results.</li><li>Choose continue, revise or pause based on evidence.</li><li>Keep the initial test within the agreed budget.</li></ul>')+
+ '<p class="notice">Generated by a deterministic, rule-based template. It is not a live AI model, legal or financial advice, verified market research, or a prediction of success. Validate claims independently.</p>';
+}
 $('planner').addEventListener('submit',e=>{
  e.preventDefault();
- const idea=$('idea').value.trim(), audience=$('audience').value.trim()||'people who experience this problem', stage=$('stage').value,budget=$('budget').value;
- if(!idea)return;
- const safe=escapeHTML(idea).replace(/\n/g,' ');
- const stageLabel={idea:'idea stage',research:'problem research stage',prototype:'prototype stage',launched:'launched stage'}[stage];
- const budgetLine=budget==='zero'?'Keep the test free: use conversations, a simple document, a mock-up, or a free landing page.':budget==='small'?'Avoid spending until interviews show a repeated problem. If you spend, set a strict cap and define what you need to learn.':'Set a spending limit for this experiment and define the evidence needed before committing more.';
- const audienceLine=escapeHTML(audience);
- const next=stage==='launched'?'Ask 5 current users what they tried to do, where they got stuck, and what would make them return.':stage==='prototype'?'Show a rough prototype to 5 target users and watch where they hesitate without explaining it first.':stage==='research'?'Interview 5 people in the target audience about the last time they experienced the problem.': 'Find 5 people in the target audience and ask for a 15-minute conversation about the problem.';
- const sections=[
- ['01','Working hypothesis','You believe that <strong>'+audienceLine+'</strong> have a problem that your idea could help solve. Your concept: “'+safe+'” This is a hypothesis to test, not a validated market finding.'],
- ['02','Who to learn from','Start with one narrow group: '+audienceLine+'. Look for people who have recently experienced the problem and already spend time, money, or effort trying to solve it.'],
- ['03','Customer discovery questions',null],
- ['04','Smallest useful MVP',null],
- ['05','Seven-day action plan',null],
- ['06','Evidence before investing',null]
- ];
- const questions=['Tell me about the last time you ran into this problem.','How do you handle it today?','What is frustrating, slow, or expensive about that workaround?','Have you tried another solution? What happened?','If you could change one thing about the current process, what would it be?'];
- const mvp=['Choose one core problem and one user type.','Sketch the single most important user journey on paper or in a free design tool.','Manually deliver the outcome for one test user before automating it.','Do not add payments, complex accounts, or extra features until the core value is demonstrated.'];
- const days=['Day 1: Write the problem in one sentence and list your top 3 assumptions.','Day 2: Find 10 people who fit the audience; invite them to talk.','Day 3: Hold the first conversations and record exact phrases people use.','Day 4: Review alternatives and competitors; note what users already prefer.','Day 5: Sketch a one-screen or one-workflow prototype.','Day 6: Show it to users and ask what they would do next; observe rather than pitch.','Day 7: Summarize evidence, decide the next experiment, and update the idea.'];
- const metrics=['At least 5 conversations with people in the target group.','Several people independently describe the same recent problem.','Evidence of an existing workaround, cost, delay, or meaningful frustration.','A clear next test that can be run cheaply.','Reasons to stop or change direction are written down too.'];
- $('empty').style.display='none';const out=$('output');out.style.display='block';
- out.innerHTML='<div class="section"><h3><span class="n">01</span> Working hypothesis</h3><p>You are exploring whether <strong>'+audienceLine+'</strong> need a better way to solve a problem addressed by this idea:</p><p>'+safe+'</p><p><strong>Current stage:</strong> '+stageLabel+'.</p></div>'+
- '<div class="section"><h3><span class="n">02</span> Who to learn from</h3><p>Start with one narrow group: <strong>'+audienceLine+'</strong>. Prioritize people who have recently faced the problem and already spend time, money, or effort addressing it.</p></div>'+
- '<div class="section"><h3><span class="n">03</span> Customer discovery questions</h3>'+bullets(questions.map(escapeHTML))+'</div>'+
- '<div class="section"><h3><span class="n">04</span> Smallest useful MVP</h3>'+bullets(mvp.map(escapeHTML))+'<p><strong>Budget approach:</strong> '+budgetLine+'</p></div>'+
- '<div class="section"><h3><span class="n">05</span> Seven-day action plan</h3>'+bullets(days.map(escapeHTML))+'</div>'+
- '<div class="section"><h3><span class="n">06</span> Evidence to look for</h3>'+bullets(metrics.map(escapeHTML))+'<p>Do not treat compliments, survey clicks, or a generated plan as proof people will pay. Look for repeated problems and real user behaviour.</p></div>'+
- '<div class="actions"><button class="btn" id="copyPlan" type="button">Copy my plan</button><button class="btn secondary" id="downloadPlan" type="button">Download as .txt</button></div><p class="notice">This is a structured, locally generated template, not a live AI analysis. Verify assumptions with real customers before making financial decisions.</p>';
- $('copyPlan').addEventListener('click',async()=>{const text=out.innerText;try{await navigator.clipboard.writeText(text);$('copyPlan').textContent='Copied ✓'}catch(err){const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();$('copyPlan').textContent='Copied ✓'}});
- $('downloadPlan').addEventListener('click',()=>{const blob=new Blob([out.innerText],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='founderai-startup-brief.txt';a.click();URL.revokeObjectURL(url)});
+ const data={name:$('name').value.trim(),idea:$('idea').value.trim(),audience:$('audience').value.trim(),problem:$('problem').value.trim(),solution:$('solution').value.trim(),stage:$('stage').value,budget:$('budget').value,evidence:$('evidence').value.trim(),alternatives:$('alternatives').value.trim(),goal:$('goal').value.trim(),constraints:$('constraints').value.trim()};
+ if(!data.name||!data.idea||!data.audience||!data.problem)return;
+ $('empty').style.display='none';const out=$('output');out.innerHTML=makePlan(data);out.style.display='block';
+ out.dataset.project=data.name;
+ if(!document.getElementById('exportActions')){
+  const actions=document.createElement('div');actions.id='exportActions';actions.className='actions no-print';
+  actions.innerHTML='<button type="button" class="btn" id="pdfBtn">Export polished PDF ↗</button><button type="button" class="btn secondary" id="copyBtn">Copy blueprint text</button><button type="button" class="btn secondary" id="editBtn">Edit answers</button>';
+  out.after(actions);
+  document.getElementById('pdfBtn').addEventListener('click',()=>{document.title=(out.dataset.project||'FounderAI')+' — Startup Blueprint';window.print()});
+  document.getElementById('copyBtn').addEventListener('click',async()=>{const text=out.innerText;try{await navigator.clipboard.writeText(text);document.getElementById('copyBtn').textContent='Copied ✓'}catch(e){alert('Clipboard access was blocked. You can select the generated plan text and copy it manually.')}});
+  document.getElementById('editBtn').addEventListener('click',()=>{$('name').focus();$('planner').scrollIntoView({behavior:'smooth',block:'start'})});
+ }else document.getElementById('exportActions').style.display='flex';
+ out.scrollIntoView({behavior:'smooth',block:'start'});
 });
 </script>
 </body>
