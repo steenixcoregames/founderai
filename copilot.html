@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080b14"><meta name="description" content="Turn a business idea into a customer validation plan, MVP outline, and seven-day launch checklist with FounderAI.">
+<title>Startup Co-Pilot — FounderAI</title>
+<style>
+:root{color-scheme:dark;--bg:#080b14;--panel:#111725;--line:#29334a;--text:#f4f6ff;--muted:#a3aec3;--violet:#b2a6ff;--cyan:#70e7dd}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0,#29234d 0,transparent 34%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}.wrap{width:min(1080px,calc(100% - 32px));margin:auto}a{color:inherit;text-decoration:none}.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid #ffffff14}.brand{font-weight:800;font-size:19px;letter-spacing:-.04em}.mark{display:inline-grid;place-items:center;width:34px;height:34px;margin-right:8px;border-radius:11px;background:linear-gradient(135deg,var(--violet),var(--cyan));color:#0b1020}.back{color:var(--muted);font-size:14px}.hero{padding:46px 0 26px}.eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}h1{font-size:clamp(36px,6vw,56px);line-height:1.06;letter-spacing:-.06em;margin:12px 0}.hero p{color:var(--muted);max-width:680px}.layout{display:grid;grid-template-columns:350px 1fr;gap:18px;align-items:start;padding-bottom:55px}.panel,.result{background:linear-gradient(145deg,#141b2a,#0f1420);border:1px solid var(--line);border-radius:18px;padding:22px}.panel{position:sticky;top:14px}.panel h2{font-size:18px;margin:0 0 6px}.hint{color:var(--muted);font-size:13px;margin:0 0 18px}label{display:block;font-size:13px;font-weight:700;margin:16px 0 7px}textarea,input,select{width:100%;background:#090e19;border:1px solid #303b53;color:var(--text);border-radius:10px;padding:12px;font:inherit;outline:none}textarea{min-height:108px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:var(--violet)}.btn{border:0;border-radius:11px;padding:12px 16px;background:linear-gradient(110deg,var(--violet),var(--cyan));color:#0b1020;font-weight:800;cursor:pointer}.btn:disabled{opacity:.5;cursor:not-allowed}.full{width:100%;margin-top:18px}.small{font-size:12px;color:#8794ad;margin-top:12px}.results-head{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:15px}.results-head h2{margin:0;font-size:19px}.pill{font-size:11px;border:1px solid #70e7dd55;color:var(--cyan);padding:4px 8px;border-radius:99px}.empty{min-height:350px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:30px}.empty .symbol{font-size:36px;color:var(--violet)}.empty h3{color:var(--text);margin:8px 0}.output{display:none}.section{padding:16px 0;border-bottom:1px solid #ffffff12}.section:last-child{border:0}.section h3{font-size:15px;margin:0 0 9px;display:flex;gap:8px;align-items:center}.n{color:var(--cyan);font-size:11px}.section p,.section li{font-size:14px;color:#c1cbe0}.section ul,.section ol{padding-left:21px;margin:8px 0}.chip{display:inline-block;border:1px solid #ffffff1a;background:#ffffff08;border-radius:8px;padding:5px 8px;margin:4px 4px 0 0;font-size:12px;color:#d4dcf0}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.secondary{background:#ffffff08;color:var(--text);border:1px solid var(--line)}.notice{font-size:12px;color:#8995ab;margin-top:15px}.footer{border-top:1px solid #ffffff12;padding:22px 0 35px;color:#8995ab;font-size:12px}@media(max-width:780px){.layout{grid-template-columns:1fr}.panel{position:static}.empty{min-height:220px}}
+</style>
+</head>
+<body>
+<header class="wrap"><nav class="nav"><a class="brand" href="./"><span class="mark">F</span>FounderAI</a><a class="back" href="./">← Back to home</a></nav></header>
+<main class="wrap">
+<section class="hero"><div class="eyebrow">FounderAI · Product preview</div><h1>Your idea. A clearer next move.</h1><p>Build a practical first-pass startup brief: who to serve, what to test, a small MVP, and the first seven days of action. No account required.</p></section>
+<div class="layout">
+<form class="panel" id="planner"><h2>Tell us what you're building</h2><p class="hint">A little context makes the plan more useful.</p>
+<label for="idea">Your business idea *</label><textarea id="idea" maxlength="1600" required placeholder="What do you want to make, and what problem does it solve?"></textarea>
+<label for="audience">Who might use it?</label><input id="audience" maxlength="180" placeholder="e.g. independent game developers">
+<label for="stage">Where are you right now?</label><select id="stage"><option value="idea">Just an idea</option><option value="research">Researching the problem</option><option value="prototype">Building a prototype</option><option value="launched">Already launched</option></select>
+<label for="budget">Starting budget</label><select id="budget"><option value="zero">$0 — use free tools</option><option value="small">Under $100</option><option value="flexible">Some budget available</option></select>
+<button class="btn full" type="submit">Generate my startup brief →</button>
+<p class="small">Your input is processed in this browser only. This preview doesn't call an AI service or upload your idea.</p>
+</form>
+<section class="result" aria-live="polite"><div class="results-head"><h2>Your startup brief</h2><span class="pill">FIRST DRAFT</span></div>
+<div class="empty" id="empty"><div><div class="symbol">✳</div><h3>Your plan starts here</h3><p>Fill in your idea and generate a practical set of next steps. Treat it as a starting hypothesis, not proof that a business will succeed.</p></div></div>
+<div class="output" id="output"></div>
+</section>
+</div>
+</main>
+<footer class="wrap footer">FounderAI · Build with evidence, not assumptions. This planning tool is an early preview and does not guarantee market demand or business outcomes.</footer>
+<script>
+const $=id=>document.getElementById(id);
+const escapeHTML=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const bullets=items=>'<ul>'+items.map(x=>'<li>'+x+'</li>').join('')+'</ul>';
+$('planner').addEventListener('submit',e=>{
+ e.preventDefault();
+ const idea=$('idea').value.trim(), audience=$('audience').value.trim()||'people who experience this problem', stage=$('stage').value,budget=$('budget').value;
+ if(!idea)return;
+ const safe=escapeHTML(idea).replace(/\n/g,' ');
+ const stageLabel={idea:'idea stage',research:'problem research stage',prototype:'prototype stage',launched:'launched stage'}[stage];
+ const budgetLine=budget==='zero'?'Keep the test free: use conversations, a simple document, a mock-up, or a free landing page.':budget==='small'?'Avoid spending until interviews show a repeated problem. If you spend, set a strict cap and define what you need to learn.':'Set a spending limit for this experiment and define the evidence needed before committing more.';
+ const audienceLine=escapeHTML(audience);
+ const next=stage==='launched'?'Ask 5 current users what they tried to do, where they got stuck, and what would make them return.':stage==='prototype'?'Show a rough prototype to 5 target users and watch where they hesitate without explaining it first.':stage==='research'?'Interview 5 people in the target audience about the last time they experienced the problem.': 'Find 5 people in the target audience and ask for a 15-minute conversation about the problem.';
+ const sections=[
+ ['01','Working hypothesis','You believe that <strong>'+audienceLine+'</strong> have a problem that your idea could help solve. Your concept: “'+safe+'” This is a hypothesis to test, not a validated market finding.'],
+ ['02','Who to learn from','Start with one narrow group: '+audienceLine+'. Look for people who have recently experienced the problem and already spend time, money, or effort trying to solve it.'],
+ ['03','Customer discovery questions',null],
+ ['04','Smallest useful MVP',null],
+ ['05','Seven-day action plan',null],
+ ['06','Evidence before investing',null]
+ ];
+ const questions=['Tell me about the last time you ran into this problem.','How do you handle it today?','What is frustrating, slow, or expensive about that workaround?','Have you tried another solution? What happened?','If you could change one thing about the current process, what would it be?'];
+ const mvp=['Choose one core problem and one user type.','Sketch the single most important user journey on paper or in a free design tool.','Manually deliver the outcome for one test user before automating it.','Do not add payments, complex accounts, or extra features until the core value is demonstrated.'];
+ const days=['Day 1: Write the problem in one sentence and list your top 3 assumptions.','Day 2: Find 10 people who fit the audience; invite them to talk.','Day 3: Hold the first conversations and record exact phrases people use.','Day 4: Review alternatives and competitors; note what users already prefer.','Day 5: Sketch a one-screen or one-workflow prototype.','Day 6: Show it to users and ask what they would do next; observe rather than pitch.','Day 7: Summarize evidence, decide the next experiment, and update the idea.'];
+ const metrics=['At least 5 conversations with people in the target group.','Several people independently describe the same recent problem.','Evidence of an existing workaround, cost, delay, or meaningful frustration.','A clear next test that can be run cheaply.','Reasons to stop or change direction are written down too.'];
+ $('empty').style.display='none';const out=$('output');out.style.display='block';
+ out.innerHTML='<div class="section"><h3><span class="n">01</span> Working hypothesis</h3><p>You are exploring whether <strong>'+audienceLine+'</strong> need a better way to solve a problem addressed by this idea:</p><p>'+safe+'</p><p><strong>Current stage:</strong> '+stageLabel+'.</p></div>'+
+ '<div class="section"><h3><span class="n">02</span> Who to learn from</h3><p>Start with one narrow group: <strong>'+audienceLine+'</strong>. Prioritize people who have recently faced the problem and already spend time, money, or effort addressing it.</p></div>'+
+ '<div class="section"><h3><span class="n">03</span> Customer discovery questions</h3>'+bullets(questions.map(escapeHTML))+'</div>'+
+ '<div class="section"><h3><span class="n">04</span> Smallest useful MVP</h3>'+bullets(mvp.map(escapeHTML))+'<p><strong>Budget approach:</strong> '+budgetLine+'</p></div>'+
+ '<div class="section"><h3><span class="n">05</span> Seven-day action plan</h3>'+bullets(days.map(escapeHTML))+'</div>'+
+ '<div class="section"><h3><span class="n">06</span> Evidence to look for</h3>'+bullets(metrics.map(escapeHTML))+'<p>Do not treat compliments, survey clicks, or a generated plan as proof people will pay. Look for repeated problems and real user behaviour.</p></div>'+
+ '<div class="actions"><button class="btn" id="copyPlan" type="button">Copy my plan</button><button class="btn secondary" id="downloadPlan" type="button">Download as .txt</button></div><p class="notice">This is a structured, locally generated template, not a live AI analysis. Verify assumptions with real customers before making financial decisions.</p>';
+ $('copyPlan').addEventListener('click',async()=>{const text=out.innerText;try{await navigator.clipboard.writeText(text);$('copyPlan').textContent='Copied ✓'}catch(err){const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();$('copyPlan').textContent='Copied ✓'}});
+ $('downloadPlan').addEventListener('click',()=>{const blob=new Blob([out.innerText],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='founderai-startup-brief.txt';a.click();URL.revokeObjectURL(url)});
+});
+</script>
+</body>
+</html>
