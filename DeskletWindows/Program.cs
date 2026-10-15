@@ -3,7 +3,6 @@ using System.Drawing.Drawing2D;
 using System.Security.Cryptography;
 using System.Text.Json;
 using Microsoft.Toolkit.Uwp.Notifications;
-using Windows.UI.Notifications;
 
 namespace Desklet;
 
